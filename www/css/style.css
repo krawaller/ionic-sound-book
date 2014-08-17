@@ -1,0 +1,28 @@
+/* Empty. Add your own CSS if you like */
+
+.slider, .list.row {
+  height: 100%;
+}
+
+.col.item {
+  padding: 20px;
+  margin: 20px;
+}
+
+.item-image {
+  background-color: #f99;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  font-size: 44px;
+  font-weight: 800;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.item.activated {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+}
