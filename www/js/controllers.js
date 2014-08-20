@@ -1,7 +1,7 @@
 var items = [{
   image: 'banan.JPG',
-  label: 'bananaz',
   sound: 'banan.mp3'
+  label: 'banan',
 },
 {
   image: 'bil.JPG',
