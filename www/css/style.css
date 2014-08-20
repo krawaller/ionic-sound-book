@@ -26,3 +26,9 @@
   -webkit-animation-duration: 0.4s;
   animation-duration: 0.4s;
 }
+
+canvas {
+  position: absolute;
+  z-index: 100;
+  pointer-events: none;
+}
