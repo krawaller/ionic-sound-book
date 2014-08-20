@@ -12,7 +12,7 @@ function create() {
 
   emitter = game.add.emitter(0, 0, 100);
 
-  emitter.makeParticles('stars', [0, 1, 2]);
+  emitter.makeParticles('stars', [0, 2]);
   emitter.gravity = 0;
 
   emitter.setYSpeed(-400, 400);
