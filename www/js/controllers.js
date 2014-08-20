@@ -1,42 +1,50 @@
 var items = [{
   image: 'banan.JPG',
-  sound: 'banan.mp3'
   label: 'banan',
+  sound: 'banan.m4a',
+  background: '#DFA954'
 },
 {
   image: 'bil.JPG',
   label: 'bil',
-  sound: 'bil.m4a'
+  sound: 'bil.m4a',
+  background: '#0083EA'
 },
 {
   image: 'flaska.JPG',
   label: 'flaska',
-  sound: 'flaska.m4a'
+  sound: 'flaska.m4a',
+  background: '#DDEBF3'
 },
 {
   image: 'klocka.JPG',
   label: 'klocka',
-  sound: 'klocka.m4a'
+  sound: 'klocka.m4a',
+  background: '#BF9D7C'
 },
 {
   image: 'kopp.JPG',
   label: 'kopp',
-  sound: 'kopp.m4a'
+  sound: 'kopp.m4a',
+  background: '#E00931'
 },
 {
   image: 'napp.JPG',
   label: 'napp',
-  sound: 'napp.m4a'
+  sound: 'napp.m4a',
+  background: '#FE0D45'
 },
 {
   image: 'sked.JPG',
   label: 'sked',
-  sound: 'sked.m4a'
+  sound: 'sked.m4a',
+  background: '#FF4433'
 },
 {
   image: 'skor.JPG',
   label: 'skor',
-  sound: 'skor.m4a'
+  sound: 'skor.m4a',
+  background: '#A40F29'
 }]
 
 angular.module('IlonPlayer.controllers', [])
@@ -55,8 +63,16 @@ angular.module('IlonPlayer.controllers', [])
   };
   $scope.slides = slides;
 
-  $scope.playSound = function(item) {
+  $scope.playSound = function(item, $event) {
     createjs.Sound.play(item.label);
+
+    $event.target.classList.add('tapped');
+    setTimeout(function() {
+      $event.target.classList.remove('tapped');
+    }, 300)
+
+  };
+
   // Called each time the slide changes
   $scope.slideChanged = function(index) {
     $scope.slideIndex = index;

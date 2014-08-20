@@ -31,12 +31,15 @@
     <ion-pane ng-controller="SlideBox">
       <ion-slide-box does-continue="true" show-pager="false" active-slide="activeSlide" on-slide-changed="slideChanged(index)">
         <ion-slide ng-repeat="slide in slides">
-          <div class="list row">
-            <div class="col item item-image animated"
+          <div class="listz row" ng-class="(slideIndex == slide.index) ? 'active' : ''">
+            <div class="col item animated"
                  ng-repeat="item in slide.items"
-                 style="background-image: url('items/{{item.image}}');"
-                 ng-click="playSound(item)">
-                 {{ item.label }}
+                 style="background-color: {{item.background}};"
+                 ng-click="playSound(item, $event)">
+
+              <div class="item-image" style="background-image: url('items/{{item.image}}');">
+                <div class="label animated">{{ item.label }}</div>
+              </div>
             </div>
           </div>
         </ion-slide>
