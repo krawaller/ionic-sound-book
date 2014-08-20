@@ -51,11 +51,16 @@ angular.module('IlonPlayer.controllers', [])
 
   var slides = [];
   for (var i = 0; i < items.length; i += 2) {
-    slides.push({ items: [items[i], items[i + 1]] })
+    slides.push({ items: [items[i], items[i + 1]], index: i / 2 })
   };
   $scope.slides = slides;
 
   $scope.playSound = function(item) {
     createjs.Sound.play(item.label);
+  // Called each time the slide changes
+  $scope.slideChanged = function(index) {
+    $scope.slideIndex = index;
   };
+  //start at 0
+  $scope.slideIndex = 0;
 })

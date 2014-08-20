@@ -29,7 +29,7 @@
   <body ng-app="starter">
 
     <ion-pane ng-controller="SlideBox">
-      <ion-slide-box does-continue="true" show-pager="false">
+      <ion-slide-box does-continue="true" show-pager="false" active-slide="activeSlide" on-slide-changed="slideChanged(index)">
         <ion-slide ng-repeat="slide in slides">
           <div class="list row">
             <div class="col item item-image animated"
