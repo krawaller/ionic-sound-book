@@ -34,8 +34,8 @@
 }
 
 .label {
-  animation-iteration-count: 4;
-  -webkit-animation-iteration-count: 4;
+  animation-iteration-count: 3;
+  -webkit-animation-iteration-count: 3;
   position: absolute;
   width: 100%;
   bottom: 40px;
