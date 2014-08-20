@@ -94,6 +94,6 @@ angular.module('IlonPlayer.controllers', [])
     var animation = animations[Math.floor(Math.random() * animations.length)];
     label.style.animationName = label.style.webkitAnimationName = animation;
 
-    timeout = setTimeout(animateIdle, 5000);
+    timeout = setTimeout(animateIdle, 4000);
   }
 })
