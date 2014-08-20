@@ -1,16 +1,22 @@
 /* Empty. Add your own CSS if you like */
 
-.slider, .list.row {
+.slider, .listz.row {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .col.item {
+  width: 100%;
+  height: 100%;
   padding: 20px;
-  margin: 20px;
+  border: none;
 }
 
 .item-image {
-  background-color: #f99;
+  position: relative;
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-position: center center;
   color: #fff;
@@ -20,15 +26,41 @@
   -webkit-text-stroke-color: black;
 }
 
-.item.activated {
-  -webkit-animation-name: pulse;
-  animation-name: pulse;
-  -webkit-animation-duration: 0.4s;
-  animation-duration: 0.4s;
+.item-image.tapped {
+  -webkit-animation-name: tapped;
+  animation-name: tapped;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+
+.label {
+  animation-iteration-count: 4;
+  -webkit-animation-iteration-count: 4;
+  position: absolute;
+  width: 100%;
+  bottom: 40px;
+  text-align: center;
 }
 
 canvas {
   position: absolute;
   z-index: 100;
   pointer-events: none;
+}
+
+@-webkit-keyframes tapped {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.95, 0.95, 0.95);
+    transform: scale3d(0.95, 0.95, 0.95);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
 }
