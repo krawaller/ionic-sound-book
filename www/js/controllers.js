@@ -79,4 +79,21 @@ angular.module('IlonPlayer.controllers', [])
   };
   //start at 0
   $scope.slideIndex = 0;
+
+
+  var timeout = setTimeout(animateIdle, 5000);;
+  ionic.on('tap', function(event) {
+    clearTimeout(timeout)
+    timeout = setTimeout(animateIdle, 5000);
+  }, document.body);
+
+  function animateIdle() {
+    var labels = document.querySelectorAll('.listz.active .label');
+    var label = labels[Math.floor(Math.random() * labels.length)];
+    var animations = ['swing', 'wobble', 'tada', 'shake', 'rubberBand']
+    var animation = animations[Math.floor(Math.random() * animations.length)];
+    label.style.animationName = label.style.webkitAnimationName = animation;
+
+    timeout = setTimeout(animateIdle, 5000);
+  }
 })
