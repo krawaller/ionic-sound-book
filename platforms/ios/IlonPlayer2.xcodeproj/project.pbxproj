@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
@@ -43,6 +42,7 @@
 		7E7966E71810823500FA85AD /* icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DD1810823500FA85AD /* icon-small@2x.png */; };
 		9AEF2B97E80242DBB4A53434 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8193D20BC04212B65047C3 /* CDVDevice.m */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
+		4A91C1905CCA421DB2C1D6F4 /* BackgroundAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6873B8418F446A8F390A1C /* BackgroundAudio.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +115,8 @@
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		EB95ADA04B2A46F989A5283D /* IonicKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IonicKeyboard.h; path = com.ionic.keyboard/IonicKeyboard.h; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = IlonPlayer2/config.xml; sourceTree = "<group>"; };
+		EF6873B8418F446A8F390A1C /* BackgroundAudio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "BackgroundAudio.m"; path = "nl.x-services.plugins.backgroundaudio/BackgroundAudio.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		74C9B049BF4A42C1B662DA16 /* BackgroundAudio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "BackgroundAudio.h"; path = "nl.x-services.plugins.backgroundaudio/BackgroundAudio.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +245,8 @@
 				763A7D61B4DF4CB48556FA1E /* CDVLogger.h */,
 				4A8193D20BC04212B65047C3 /* CDVDevice.m */,
 				6B3546D2DC4E49839F43711D /* CDVDevice.h */,
+				EF6873B8418F446A8F390A1C /* BackgroundAudio.m */,
+				74C9B049BF4A42C1B662DA16 /* BackgroundAudio.h */,
 			);
 			name = Plugins;
 			path = IlonPlayer2/Plugins;
@@ -441,6 +445,7 @@
 				7E5B4FA8089547BA86FE536F /* UIWebViewExtension.m in Sources */,
 				78CFD8AF3E8D4B15993DCE6B /* CDVLogger.m in Sources */,
 				9AEF2B97E80242DBB4A53434 /* CDVDevice.m in Sources */,
+				4A91C1905CCA421DB2C1D6F4 /* BackgroundAudio.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

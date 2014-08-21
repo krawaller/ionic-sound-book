@@ -28,6 +28,10 @@
     <feature name="Device">
         <param name="ios-package" value="CDVDevice" />
     </feature>
+    <feature name="BackgroundAudio">
+        <param name="ios-package" value="BackgroundAudio" />
+        <param name="onload" value="true" />
+    </feature>
     <name>IlonPlayer2</name>
     <description>
         An Ionic Framework and Cordova project.
