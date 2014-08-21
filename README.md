@@ -1,8 +1,7 @@
-<img align="right" width="480" height="320" src="readme-img/screenshot.png">
-
 # ionic-sound-book
 A super simple sound book hacked together for my son.
 
+<img width="480" height="320" src="readme-img/screenshot.png">
 
 ## Development
 It's a hybrid app written in javascript with the [Ionic Framework](http://ionicframework.com/) and wrapped with [Cordova](http://cordova.apache.org/).
